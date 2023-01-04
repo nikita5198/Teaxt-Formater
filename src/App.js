@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+
 import './App.css';
 import About from './components/About';
 import Alert from './components/Alert';
@@ -35,17 +36,12 @@ const [mode,setMode]=useState('light');
 
   return (
     <>
-    
   <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
   <Alert alert={alert} />
   <div className='container my-3'>
- 
-  
-    <TextForm showAlert={showAlert} mode={mode}/> 
+  <TextForm showAlert={showAlert} mode={mode}/> 
    <About/>
-   
     </div>
- 
     </>
   );
 }
